@@ -22,9 +22,7 @@
             </ul>
         </nav>
         <nav class="nav-bar nav-bar--right">
-            
-            <ul class="nav-bar__lists nav-bar__lists--left">
-                   
+            <ul class="nav-bar__lists nav-bar__lists--left">  
                 <li class="nav-bar__lists__link"><a href="#"><svg class="nav-bar__lists nav-bar__lists--svg-icon">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
                         </svg></a></li>
@@ -33,12 +31,23 @@
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
                         </svg></a>
                 <br>
-                
             </ul>
-            <ul class="nav-bar__lists nav-bar__lists--right">
-                <li class="nav-bar__lists__link"><a href="#"><svg class="nav-bar__lists nav-bar__lists--svg-icon">
+    
+            <!--nuo cia dropdown -->
+           <ul class="nav-bar__lists nav-bar__lists--right">
+             <li class="nav-bar__lists__link dropdown">
+                    <a  href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg class="nav-bar__lists nav-bar__lists--svg-icon">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cropfree"></use>
-                        </svg></a></li>
+                    </svg>
+                     </a>
+                    <div class="dropdown-menu" aria-labelledby="activities">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+              </li>
+    
                 <li class="nav-bar__lists__link"><a href="#"><svg class="nav-bar__lists nav-bar__lists--svg-icon">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#morehoriz"></use>
                         </svg></a></li>
@@ -330,7 +339,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="boxes boxes--flex">
-                        <img class="boxes__image img-fluid" src="assets/images/user.jpg" alt="user picture">
+                        <img class="boxes__image img-fluid" src="../assets/images/user.jpg" alt="user picture">
                         <div class="boxes__user-info v-align">
                             <h6 class="boxes__title">Jonas</h6>
                             <p class="boxes__info">Jonas@one.lt</p>
@@ -340,7 +349,7 @@
                 </div>
                 <div class="col-12">
                     <div class="boxes boxes--flex">
-                        <img class="boxes__image" src="assets/images/user-1.jpg" alt="user picture">
+                        <img class="boxes__image" src="../assets/images/user-1.jpg" alt="user picture">
                         <div class="boxes__user-info v-align">
                             <h6 class="boxes__title">Greta</h6>
                             <p class="boxes__info">Greta@one.lt</p>
@@ -351,9 +360,9 @@
                 </div>
                 <div class="col-12">
                     <div class="boxes boxes--flex">
-                        <img class="boxes__image" src="assets/images/user-1.jpg" alt="user picture">
+                        <img class="boxes__image" src="../assets/images/user-1.jpg" alt="user picture">
                         <div class="boxes__user-info v-align">
-                            <h6 class="boxes__title">Aistute</h6>
+                            <h6 class="boxes__title">Aistutė</h6>
                             <p class="boxes__info">Aistute@one.lt</p>
                             <p class="user-role user-role--master">Savininkas</p>
                         </div>
@@ -472,5 +481,10 @@ var myChart = new Chart(ctx, {
     }
 });
         </script>
+        
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
 </body>
 </html>
