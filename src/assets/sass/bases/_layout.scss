@@ -10,6 +10,9 @@
     padding: 15px;
     background: #fff;
     margin-bottom: 15px;
+    .circle{
+        @include circle();
+    }
     &__title{
       }
       &--right{

@@ -47,7 +47,7 @@
             &--svg-icon{
                 width: 24px;
                 height: 24px;
-                fill: white;
+                fill: lime;
                 margin-right: 10px;
             }
             &--svg-iconf{
@@ -61,6 +61,26 @@
             &--search{
                 height: 24px;
                 width: 150px;
+            }
+        }
+        .dropdown-menu{
+            &__item{
+                display: flex;
+                padding: 10px 20px;
+                align-items: center;
+                .circle{
+                    @include circle($width: 40px, $height: 40px)
+                }
+                &__title{
+                    margin-left: 10px;
+                    h5{
+                        color: $text-color;
+                    }
+                    p{
+                        color: $mid-gray;
+                        
+                    }
+                }
             }
         }
     }
