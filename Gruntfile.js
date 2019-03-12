@@ -37,18 +37,25 @@ module.exports = function(grunt) {
           },
           en: {
               options: {
-                  data: ['src/templates/data/en/*.yml', 'src/templates/data/*.yml']
+                  data: ['src/templates/data/en/*.yml',]
               },
               src: ['src/templates/pages/en/*.hbs'],
               dest: './web'
           },
+          lt: {
+            options: {
+                data: ['src/templates/data/lt/*.yml',]
+            },
+            src: ['src/templates/pages/lt/*.hbs'],
+            dest: './web/lt/'
+        },
       },
       watch: {
           options: {
           },
           dev: {
               files: ['src/assets/sass/**/*.scss', 'src/templates/**/*.hbs'],
-              tasks: ['compass:dev', 'assemble:en']
+              tasks: ['compass:dev', 'assemble:site']
           },
           handlebars: {
               files: ['src/templates/*/*.hbs', 'src/templates/layouts/*.hbs' ],
@@ -64,6 +71,20 @@ module.exports = function(grunt) {
                 '../../../../web/assets/images/ic_morehoriz_24px.svg',
                 '../../../../web/assets/images/ic_addalert_24px.svg',
                 '../../../../web/assets/images/ic_accountcircle_24px.svg',
+                '../../../../web/assets/images/ic_minton_24px.svg',
+                '../../../../web/assets/images/ic_dashboard_24px.svg',
+                '../../../../web/assets/images/ic_UIKit_24px.svg',
+                '../../../../web/assets/images/ic_typography_24px.svg',
+                '../../../../web/assets/images/ic_search_24px.svg',
+                '../../../../web/assets/images/ic_multilevel_24px.svg',
+                '../../../../web/assets/images/ic_maps_24px.svg',
+                '../../../../web/assets/images/ic_mail_24px.svg',
+                '../../../../web/assets/images/ic_extras_24px.svg',
+                '../../../../web/assets/images/ic_charts_24px.svg',
+                '../../../../web/assets/images/ic_visibility_24px.svg',
+                '../../../../web/assets/images/ic_border_24px.svg',
+                '../../../../web/assets/images/ic_track_24px.svg',
+                '../../../../web/assets/images/ic_timeline_24px.svg',
             ],
             dest: 'src/sprites',
             options: {
@@ -91,11 +112,18 @@ module.exports = function(grunt) {
       'grunt-assemble',
       'grunt-svg-sprite',
   ].forEach(grunt.loadNpmTasks);
+
+  grunt.registerTask('assemble:site', [
+    'compass:dist',
+    'assemble:en',
+    'assemble:lt',
+]);
   
     // Default task(s).
     grunt.registerTask('default', [
         'compass:dist',
-        'assemble:en'
+        'assemble:en',
+        'assemble:lt',
     ]);
   
   };

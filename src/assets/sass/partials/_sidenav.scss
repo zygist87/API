@@ -1,6 +1,62 @@
-.sidebar{
+.side-menu{
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100%;
+    top: $nav-height;
+    width: $nav-left-width;
+    height: 100%;
+    background-color: $default-sidenav-bg;
+        -webkit-box-shadow: $box-shadow;
+         box-shadow: $box-shadow;
+    overflow: scroll;
+    padding: 20px 0 80px;
+    &__lists{
+        
+    
+    &__list{
+        padding: 12px 20px;
+        position: relative;
+        border-left: 3px solid #fff;
+        &:hover{
+            background-color: $hover-sidenav-bg;
+            border-left: 5px solid blue;
+            a{
+                color: $default-bg;
+                text-decoration: none;
+            }
+            &:after{
+                @include arrow();
+            }
+        }
+        a{
+            display: flex;
+            align-items: center;
+            color: inherit;
+            color: $text-color;
+            svg{
+                margin-right: 10px;
+                color: $mid-gray;
+            }
+        }
+        &:after{
+            @include arrow($rotate: -45deg);
+
+        }
+        &.active{
+            background: $bg-color;
+            border-left: 5px solid blue;
+            a{
+                
+                background-color: $default-bg;
+                background: $bg-color;
+            }
+        }
+       
+        
+    }
+        &__title{
+            padding: 12px 20px;
+            font-size: 12px;
+        }
+        }
+    }
+
+
