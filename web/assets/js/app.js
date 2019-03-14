@@ -17,10 +17,19 @@ $(funcion(){
     })
 })
 */
+//padarau, kad paspaudus burgeri dingtu sidenav
+
+//padarau. kad paspaudus burgeri isdidetu dasbordas
+// $(function() {
+//     $('#burger').on('click', function(){
+//         $('.section-container').toggleClass('section-container--closed');
+//     })
+// });
+//nuo cia jau paskaitoje
 $(function() {
     $('#burger').on('click', function(){
         $('#side-menu').toggleClass('side-menu--closed');
+        $('body').toggleClass('sidenav-closed');
     })
-})
-
+});
 

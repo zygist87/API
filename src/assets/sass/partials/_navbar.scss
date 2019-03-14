@@ -21,7 +21,7 @@
             -webkit-box-pack: justify;
              -ms-flex-pack: justify;
                 justify-content: space-between;
-            margin-left: $nav-left-width;
+            //margin-left: $nav-left-width;
             min-height: $nav-height;
             width: calc(100%-240px);
 
@@ -85,11 +85,11 @@
         }
     }
 }
-searchhh{
-    &nav-bar__lists nav-bar__lists--svg-icon{
-        fill: black;
-        background-color: white;
-    }
-}
+// searchhh{
+//     &nav-bar__lists nav-bar__lists--svg-icon{
+//         fill: black;
+//         background-color: white;
+//     }
+// }
 
 
