@@ -85,6 +85,23 @@
         }
     }
 }
+.navbar-vertical--closed{
+        width: 70px;
+        
+        .side-menu__lists{
+            &__list{
+                span{
+                    display: none;
+                }
+                &:after{
+                    display: none;
+                }
+            }
+            &__title{
+                display: none;
+            }
+        }
+}
 // searchhh{
 //     &nav-bar__lists nav-bar__lists--svg-icon{
 //         fill: black;

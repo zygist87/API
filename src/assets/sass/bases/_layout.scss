@@ -4,6 +4,17 @@
     &--closed{
         margin-left: 90px;
     }
+    .section-title{
+        &__nav{
+            span{
+                &:first-of-type{
+                    &:after{
+                        content: '/'
+                    }
+                }
+            }
+        }
+    }
     }
 .boxes{
     -webkit-box-shadow: $box-shadow;
