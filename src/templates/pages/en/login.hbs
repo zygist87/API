@@ -2,7 +2,7 @@
 layout: login.hbs
 ---
 
-<div class="container">
+<div class="container perfect-center">
     <div class="row">
         <div class="col-4 offset-4">
             <div class="login">
@@ -10,16 +10,20 @@ layout: login.hbs
                     <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#minton"></use>
                     </svg>
+                    <span>MINTON</span>
                 </div>
                 <div class="login__form">
                     <form action="" class="login__form" name="login-form" action="dashboard.html">
                         <div class="login__form__item">
-                            <input type="email" name="email">
-                        <label for="email">Email</label>
+                            <input type="email" name="email" required="required">
+                            <label for="email">Email</label>
                         </div>
                         <div class="login__form__item">
-                            <input type="password" name="password" value="">
-                            <label for="password">Email</label>
+                            <input type="password" name="password" value="" required="required">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="login__form__item">
+                            <button class="login__form__button" >Log In</button>
                         </div>
                     </form>
                 </div>

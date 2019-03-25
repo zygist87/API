@@ -1,9 +1,11 @@
 .section-container{
+    
     margin-top: $nav-height + 20;
     margin-left: $nav-left-width + 15;
     &--closed{
         margin-left: 90px;
     }
+    
     .section-title{
         &__nav{
             span{
@@ -76,4 +78,7 @@
     .section-container{
         margin-left: $sidenav-closed-width + 15;
     }
+}
+.backgroundd{
+    background-color: $bg-color;
 }
