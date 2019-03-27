@@ -1,4 +1,4 @@
-.container{
+.container-fluid{
     width: 100%;
     padding: 0;
     margin: 0;
@@ -7,11 +7,39 @@
         border-style: none;
 
         &__left__top{
-            
+            text-align: center;
             .boxes__image{
-
+                margin: 0;
+                border: 1px solid $mid-gray;
+                padding: 4px;
             }
+            .general-info{
+                text-align: left;
+                padding-bottom: 10px;
+                font-weight: bold;
+                span{
+                    font-weight: normal;
+                }
+            }
+            .user-info__bottom{
+                margin-top: 40px;
+                margin-bottom: 40px;
+                .circle{
+                  @include circle();
+                  height: 40px;
+                  width: 40px;
+                  margin-right: $spacer;
+                  background: gray;
+                  .svg-icon{
+                    &--color{
+                      fill: #5a5757;
+                      padding: 6px;
+                    }
+                  }
+                }
+              }
             .boxes__user-info{
+                margin: 0;
                 align-items: center;
                 .boxes__title{
                     font-weight: bold;
@@ -21,13 +49,7 @@
                     text-align: center;
                     padding-bottom: 30px;
                 }
-                .general-info{
-                    padding-bottom: 10px;
-                    font-weight: bold;
-                    span{
-                        font-weight: normal;
-                    }
-                }
+            
                 .login__form__item{
 
                     a:first-child{
@@ -55,6 +77,10 @@
             .nav{
 
                 border-bottom: 2px solid $mid-gray;
+                .nav-link.active{
+                    border-bottom: 2px solid blue;
+                }
+                
                 .nav-item{
                     text-decoration: none;
                     border: none;
