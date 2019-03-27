@@ -32,7 +32,10 @@ $(function() {
         $('body').toggleClass('sidenav-closed');
         //apatine eilute pats parasiau, navbar.hbs pridejau klase ir id
         $('#navbar-vertical').toggleClass('navbar-vertical--closed');
-    })
+    });
+    $('#notification1').on('click', function(){
+        $('#side-menu-right').toggleClass('side-menu--right--closed');
+    });
 //cia kad veiktu 
     var basename = $('#side-menu').find('li.active span').text();
     $('#basename').text(basename)

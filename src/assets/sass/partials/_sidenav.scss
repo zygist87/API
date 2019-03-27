@@ -13,8 +13,14 @@
     &::-webkit-scrollbar{
         display: none;
     }
+    z-index: 999;
     &--right{
         right: 0;
+        transition: $transition;
+        width: $sidenav-right-width;
+        &--closed{
+            right: -$sidenav-right-width;
+        }
     }
     &__lists{
         
