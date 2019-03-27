@@ -1,13 +1,89 @@
 .container{
+    width: 100%;
     padding: 0;
     margin: 0;
-    .profile{
-        padding: 0;
-        &__left{
+    .boxes{
+        border: none;
+        border-style: none;
 
+        &__left__top{
+            
+            .boxes__image{
+
+            }
+            .boxes__user-info{
+                align-items: center;
+                .boxes__title{
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .boxes__title__mail{
+                    text-align: center;
+                    padding-bottom: 30px;
+                }
+                .general-info{
+                    padding-bottom: 10px;
+                    font-weight: bold;
+                    span{
+                        font-weight: normal;
+                    }
+                }
+                .login__form__item{
+
+                    a:first-child{
+                        border: none;
+                        background-color: $color-success; 
+                    }
+                    a:last-child{
+                        border: none;
+                        background-color: $color-danger; 
+                    }
+                }
+            }
+        }
+        &__left__bottom{
+
+            .title{
+                padding-bottom: 20px;
+            }
+            .subtitle{
+                padding-bottom: 10px;
+            }
         }
         &__right{
-            
+            border-style: none;
+            .nav{
+
+                border-bottom: 2px solid $mid-gray;
+                .nav-item{
+                    text-decoration: none;
+                    border: none;
+                    color: black;
+                }
+            }
+            .form-group{
+                border-bottom: 1px solid $mid-gray;
+                &-first{
+                    padding-top: 20px;
+                }
+                &-last{
+                    padding-bottom: 50px;
+                }
+                .form-control{
+                    border: none;
+                    border-radius: 0;
+                    padding: 0;
+                }
+            }
+            .btn{
+                width: 100px;
+                height: 40px;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
         }
     }
 }
