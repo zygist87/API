@@ -70,34 +70,42 @@ custom_basename: profile
                         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">GALLERY</a>
                         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">SETTINGS</a>
                     </div>
+                    {{!-- ikopinau sita diva su viskuo  --}}
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="home-tab">
+                           <form class="">
+                                <div class="form-group form-group-first">
+                                    <label for="exampleFormControlInput1">Full Name</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Email</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="first.last@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Username</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="john">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="6 - 15 Characters">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Re-Password</label>
+                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="6 - 15 Characters">
+                                </div>
+                                <div class="form-group form-group-last">
+                                    <label for="exampleFormControlTextarea1">About Me</label>
+                                    <div><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Save</a>
+                            </form> 
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="profile-tab">Profileee</div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="contact-tab">Contactssss</div>
+                    </div>
+                    {{!-- iki cia keiciu --}}
                 </nav>
-                <form>
-                    <div class="form-group form-group-first">
-                        <label for="exampleFormControlInput1">Full Name</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="first.last@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Username</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="john">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="6 - 15 Characters">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Re-Password</label>
-                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="6 - 15 Characters">
-                    </div>
-                    <div class="form-group form-group-last">
-                        <label for="exampleFormControlTextarea1">About Me</label>
-                        <div><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
-                    </div>
-                    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Save</a>
-                </form>
             </div>
         </div>
     </div>
