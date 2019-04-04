@@ -31,6 +31,31 @@
             line-height: $nav-height;
             
             &--left{
+                .nav-bar__lists--search{
+                    border: none;
+                    background: $bg-input;
+                    color: white;
+                    border-top: 1px solid silver;
+                    border-bottom: 1px solid silver;
+                    border-left: 1px solid silver;
+                }
+                input:focus{
+                    outline: none;
+                }
+                ::placeholder{
+                    color: white;
+                    padding-left: 10px;
+                }
+                .nav-bar__lists--svg-iconf{
+                    margin-bottom: 2px;
+                    background: $bg-input;
+                    fill: silver;
+                    border-top: 1px solid silver;
+                    border-bottom: 1px solid silver;
+                    border-right: 1px solid silver;
+                }
+
+
 
             }
             &--right{
@@ -43,11 +68,12 @@
                 display: inline-block;
                 text-align: center;
                 height: 100px;
+
             }
             &--svg-icon{
                 width: 24px;
                 height: 24px;
-                fill: lime;
+                fill: white;
                 margin-right: 10px;
             }
             &--svg-iconf{
